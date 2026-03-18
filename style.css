@@ -298,6 +298,56 @@ ul { list-style: none; }
   margin-bottom: 32px; line-height: 1.2;
 }
 
+/* --- Email Signup --- */
+.email-signup {
+  margin-top: 40px;
+}
+
+.email-label {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.email-form {
+  display: flex;
+  gap: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.email-input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.email-input:focus {
+  border-color: var(--accent);
+}
+
+.email-input::placeholder {
+  color: var(--muted);
+}
+
+.btn-email {
+  padding: 12px 20px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .email-form {
+    flex-direction: column;
+  }
+}
+
 /* --- Footer --- */
 .site-footer { border-top: 1px solid var(--border); padding: 48px 0; }
 
