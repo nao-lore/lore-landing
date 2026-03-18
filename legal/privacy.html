@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Lore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="legal.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../" class="logo">Lore</a>
+    </div>
+  </header>
+  <main class="legal-page">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="legal-updated">Last updated: March 18, 2026</p>
+
+      <h2>1. Overview</h2>
+      <p>Lore ("we", "our", "the Service") is a web application that transforms AI conversation histories into structured project context. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
+
+      <h2>2. Data Storage</h2>
+      <p>Lore is a client-side application. Your data is stored <strong>locally in your browser</strong> using localStorage and IndexedDB. We do not have a server-side database that stores your conversations, projects, or personal data.</p>
+      <ul>
+        <li><strong>Conversation text</strong> — stored only in your browser. Never sent to our servers.</li>
+        <li><strong>AI-generated snapshots</strong> — stored only in your browser.</li>
+        <li><strong>API keys</strong> — if you provide your own API key, it is stored only in your browser's localStorage. We never transmit or store your API keys on our servers.</li>
+      </ul>
+
+      <h2>3. AI Processing</h2>
+      <p>When you transform a conversation, the text is sent to an AI provider (Anthropic, Google, or OpenAI) for processing. This is either:</p>
+      <ul>
+        <li><strong>Direct</strong> — from your browser to the AI provider using your own API key, or</li>
+        <li><strong>Via our proxy</strong> — through our server-side function (for free-tier users without their own API key). In this case, your conversation text passes through our server transiently but is not stored.</li>
+      </ul>
+      <p>We do not log, store, or retain any conversation content that passes through our proxy.</p>
+
+      <h2>4. Payment Data</h2>
+      <p>Payments are processed by <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe</a>. We do not collect or store your credit card information. Stripe may collect information necessary to process your payment in accordance with their privacy policy.</p>
+
+      <h2>5. Analytics</h2>
+      <p>We may use privacy-respecting analytics (such as Vercel Analytics) to understand aggregate usage patterns. These do not track individual users or collect personal information.</p>
+
+      <h2>6. Chrome Extension</h2>
+      <p>The Lore Chrome Extension extracts conversation data from supported AI platforms (ChatGPT, Claude, Gemini) and sends it to the Lore web app via URL parameters. The extension does not send data to any external server.</p>
+
+      <h2>7. Cookies</h2>
+      <p>Lore does not use tracking cookies. We use localStorage for application state only.</p>
+
+      <h2>8. Third-Party Services</h2>
+      <ul>
+        <li><strong>Stripe</strong> — payment processing</li>
+        <li><strong>Vercel</strong> — hosting and edge functions</li>
+        <li><strong>AI Providers</strong> (Anthropic, Google, OpenAI) — conversation processing</li>
+      </ul>
+
+      <h2>9. Data Deletion</h2>
+      <p>Since your data is stored locally, you can delete it at any time by clearing your browser's site data for Lore. To cancel your Pro subscription, use the Stripe customer portal.</p>
+
+      <h2>10. Children's Privacy</h2>
+      <p>Lore is not intended for children under 13. We do not knowingly collect personal information from children.</p>
+
+      <h2>11. Changes to This Policy</h2>
+      <p>We may update this policy from time to time. Changes will be reflected on this page with an updated date.</p>
+
+      <h2>12. Contact</h2>
+      <p>For privacy-related questions, contact us at: <a href="mailto:naoyasama0628@gmail.com">naoyasama0628@gmail.com</a></p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-links">
+        <a href="../">Home</a>
+        <a href="tokushoho.html">特定商取引法</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+      <p class="footer-brand">Lore</p>
+    </div>
+  </footer>
+</body>
+</html>
